@@ -14,83 +14,114 @@ import openfl.Lib;
 class RetroFilter extends FlxShader // https://www.shadertoy.com/view/WdffW2
 {
     @:glFragmentSource('
-        #pragma header
+     #pragma header
 
-        uniform float iTime;
-        uniform vec2 iResolution;
-        uniform bool vignetteOn;
-        uniform bool perspectiveOn;
-        uniform bool distortionOn;
-        uniform bool scanlinesOn;
-        uniform bool vignetteMoving;
-        uniform sampler2D noiseTex;
-        uniform float glitchModifier;
+    uniform float iTime;
+   // uniform sampler2D noiseTex;
+    uniform vec3 iResolution;
+
+    float onOff(float a, float b, float c)
+    {
+        return step(c, sin(iTime + a*cos(iTime*b)));
+    }
+
+    float ramp(float y, float start, float end)
+    {
+        float inside = step(start,y) - step(end,y);
+        float fact = (y-start)/(end-start)*inside;
+        return (1.-fact) * inside;
+
+    }
+
+    vec4 getVideo(vec2 uv)
+      {
+        vec2 look = uv;
+            float window = 1./(1.+20.*(look.y-mod(iTime/4.,1.))*(look.y-mod(iTime/4.,1.)));
+            look.x = look.x + (sin(look.y*10. + iTime)/50.*onOff(4.,4.,.3)*(1.+cos(iTime*80.))*window)*(0*2);
+            float vShift = 0.4*onOff(2.,3.,.9)*(sin(iTime)*sin(iTime*20.) +
+                                                 (0.5 + 0.1*sin(iTime*200.)*cos(iTime)));
+            look.y = mod(look.y + vShift*0, 1.);
+        
+        vec4 video = flixel_texture2D(bitmap,look);
+
+        return video;
+      }
+
+    vec2 screenDistort(vec2 uv)
+    {
+        uv = (uv - 0.5) * 2.0;
+        uv *= 1.1;
+        uv.x *= 1.0 + pow((abs(uv.y) / 5.0), 2.0);
+        uv.y *= 1.0 + pow((abs(uv.x) / 4.0), 2.0);
+        uv  = (uv / 2.0) + 0.5;
+        uv =  uv *0.92 + 0.04;
+        return uv;
+      
+        return uv;
+    }
+    float random(vec2 uv)
+    {
+        return fract(sin(dot(uv, vec2(15.5151, 42.2561))) * 12341.14122 * sin(iTime * 0.03));
+    }
+    float noise(vec2 uv)
+    {
+        vec2 i = floor(uv);
+        vec2 f = fract(uv);
+
+        float a = random(i);
+        float b = random(i + vec2(1.,0.));
+        float c = random(i + vec2(0., 1.));
+        float d = random(i + vec2(1.));
+
+        vec2 u = smoothstep(0., 1., f);
+
+        return mix(a,b, u.x) + (c - a) * u.y * (1. - u.x) + (d - b) * u.x * u.y;
+
+    }
 
 
-        float hash11(float a)
-        {
-            return fract(53.156*sin(a*45.45))-.5;
-        }
-        float dispnoise(float a)
-        {
-            float a1 = hash11(floor(a)),a2=hash11(ceil(a));
-            return .03*mix(a1,a2,pow(fract(a),8.));
-        }
-        float noise(float a)
-        {
-            float a1 = hash11(floor(a)),a2=hash11(ceil(a));
-            return mix(a1+.5,a2+.5,pow(fract(a),50.));
-        }
-        
-        float hash21(vec2 a)
-        {
-            return fract(sin(dot(a,vec2(12.9898,78.233))+iTime)*43758.5453);
-        }
-        float perlin(vec2 a)
-        {
-            a*=vec2(100.,500.);
-            float a1 = hash21(floor(a));
-            float a2 = hash21(floor(a)+vec2(1,0));
-            float a3 = hash21(floor(a)+vec2(0,1));
-            float a4 = hash21(ceil(a));
-            return pow(mix(mix(a1,a2,fract(a.x)),mix(a3,a4,fract(a.x)),fract(a.y)),2.);  
-        }
-        
-        
-        vec4 grade(vec4 color)
-        {
-            color = pow(color,vec4(2.2));
-            color*= vec4(1.3,.7,.89,1);
-            
-            color = pow(color,vec4(.4));
-            return 1.3*color;
-        }
-        
-        
-        void main()
-        {
-            vec2 fragCoord = openfl_TextureCoordv * iResolution;
+    vec2 scandistort(vec2 uv) {
+        float scan1 = clamp(cos(uv.y * 2.0 + iTime), 0.0, 1.0);
+        float scan2 = clamp(cos(uv.y * 2.0 + iTime + 4.0) * 10.0, 0.0, 1.0) ;
+        float amount = scan1 * scan2 * uv.x;
 
-            vec2 uv = fragCoord.xy / iResolution.xy;
-            float disp = dispnoise(.7*uv.y+mod(iTime,200.)*.2);
-            uv.x+=disp;
-                if(hash11(floor(iTime*4.)/4.)>.47)
-                uv.y+=.5*hash11(floor(iTime*8.)/4.);
-            uv =fract(uv);
-            
-            vec4 color  = texture2D(bitmap ,uv);
-            color = grade(color);
-            if(hash11(uv.y+floor((iTime+uv.y)*16.)/16.)>.497)
-                color+=hash11(floor(100.*(uv.x-iTime)))+.5;
-            color = mix(color,vec4(.3),max(0.,sin(uv.y*20.)*perlin(.3*uv)*.5));
-            
-            gl_FragColor = color;
-            if(abs(2.*gl_FragCoord.y-iResolution.y)>iResolution.y-50.*noise(5.*iTime+(uv.y>.5?0.:10.)))
-                gl_FragColor=vec4(perlin(uv)+.5);
-            if(abs(2.*gl_FragCoord.x-(1.-disp)*iResolution.x)>(4./3.)*iResolution.y)
-                gl_FragColor=vec4(0);
-        }
-    ')
+        //uv.x -= 0.05 * mix(flixel_texture2D(noiseTex, vec2(uv.x, amount)).r * amount, amount, 0.9);
+
+        return uv;
+
+    }
+    void main()
+    {
+        vec2 uv = openfl_TextureCoordv;
+      vec2 curUV = screenDistort(uv);
+        uv = scandistort(curUV);
+        vec4 video = getVideo(uv);
+      float vigAmt = 1.0;
+      float x =  0.;
+
+
+      video.r = getVideo(vec2(x+uv.x+0.001,uv.y+0.001)).x+0.05;
+      video.g = getVideo(vec2(x+uv.x+0.000,uv.y-0.002)).y+0.05;
+      video.b = getVideo(vec2(x+uv.x-0.002,uv.y+0.000)).z+0.05;
+      video.r += 0.08*getVideo(0.75*vec2(x+0.025, -0.027)+vec2(uv.x+0.001,uv.y+0.001)).x;
+      video.g += 0.05*getVideo(0.75*vec2(x+-0.022, -0.02)+vec2(uv.x+0.000,uv.y-0.002)).y;
+      video.b += 0.08*getVideo(0.75*vec2(x+-0.02, -0.018)+vec2(uv.x-0.002,uv.y+0.000)).z;
+
+      video = clamp(video*0.6+0.4*video*video*1.0,0.0,1.0);
+          vigAmt = 3.+.3*sin(iTime + 5.*cos(iTime*5.));
+
+        float vignette = (1.-vigAmt*(uv.y-.5)*(uv.y-.5))*(1.-vigAmt*(uv.x-.5)*(uv.x-.5));
+
+         video *= vignette;
+
+
+      gl_FragColor = mix(video,vec4(noise(uv * 75.)),.05);
+
+      if(curUV.x<0 || curUV.x>1 || curUV.y<0 || curUV.y>1){
+        gl_FragColor = vec4(0,0,0,0);
+      }
+
+    }')
     public function new()
     {
         super();

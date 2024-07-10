@@ -1659,6 +1659,23 @@ class PlayState extends MusicBeatState
 				camGame.setFilters([curShader]);
 				camHUD.setFilters([curShader]);
 				camOther.setFilters([curShader]);
+			case 'needle':
+				
+				var vcr:RetroFilter;
+				vcr = new RetroFilter();
+	
+				var daStatic:BGSprite = new BGSprite('daSTAT', 0, 0, 1.0, 1.0, ['staticFLASH'], true);
+				daStatic.cameras = [camHUD];
+				daStatic.setGraphicSize(FlxG.width, FlxG.height);
+				daStatic.screenCenter();
+				daStatic.alpha = 0.05;
+				add(daStatic);
+				
+				curShader = new ShaderFilter(vcr);
+	
+				camGame.setFilters([curShader]);
+				camHUD.setFilters([curShader]);
+				camOther.setFilters([curShader]);
 			case 'hog':
 				gfGroup.visible = false;
 				add(hogRocks);
