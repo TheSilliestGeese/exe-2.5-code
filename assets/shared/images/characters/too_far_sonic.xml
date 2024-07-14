@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="too_far_sonic.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="down0000" x="1046" y="887" width="440" height="691"/>
+	<SubTexture name="idle0000" x="0" y="887" width="522" height="705"/>
+	<SubTexture name="idle0001" x="0" y="887" width="522" height="705"/>
+	<SubTexture name="idle0002" x="523" y="887" width="522" height="705"/>
+	<SubTexture name="idle0003" x="523" y="887" width="522" height="705"/>
+	<SubTexture name="left0000" x="2975" y="0" width="703" height="730"/>
+	<SubTexture name="right0000" x="2975" y="731" width="580" height="782"/>
+	<SubTexture name="up0000" x="0" y="0" width="594" height="886"/>
+	<SubTexture name="up0001" x="0" y="0" width="594" height="886"/>
+	<SubTexture name="up0002" x="595" y="0" width="594" height="886"/>
+	<SubTexture name="up0003" x="595" y="0" width="594" height="886"/>
+	<SubTexture name="up0004" x="1190" y="0" width="594" height="886"/>
+	<SubTexture name="up0005" x="1190" y="0" width="594" height="886"/>
+	<SubTexture name="up0006" x="1785" y="0" width="594" height="886"/>
+	<SubTexture name="up0007" x="1785" y="0" width="594" height="886"/>
+	<SubTexture name="up0008" x="2380" y="0" width="594" height="886"/>
+	<SubTexture name="up0009" x="2380" y="0" width="594" height="886"/>
+</TextureAtlas>
