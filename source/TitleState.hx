@@ -145,7 +145,7 @@ class TitleState extends MusicBeatState
 		#elseif MENU
 		FlxTransitionableState.skipNextTransOut=true;
 		FlxTransitionableState.skipNextTransIn=true;
-		MusicBeatState.switchState(new EncoreState());
+		MusicBeatState.switchState(new MainMenuState());
 		#else
 
 			#if desktop
@@ -385,7 +385,7 @@ class TitleState extends MusicBeatState
 				{
 					remove(titleText); // incase someone turned flashing off
 					FlxG.sound.music.stop();
-					MusicBeatState.switchState(new EncoreState());
+					MusicBeatState.switchState(new MainMenuState());
 					/*var video = new MP4Handler();
 					video.finishCallback = function()
 					{
