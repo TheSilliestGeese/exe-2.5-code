@@ -29,7 +29,7 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 	var curSelected:Int = 0;
 
-	var songArray:Array<String> = ["too-slow", "you-cant-run", "triple-trouble", "endless"];
+	var songArray:Array<String> = ["too-slow-encore", "you-cant-run-encore", "triple-trouble-encore", "endless-encore"];
 
 	var boxgrp:FlxTypedSpriteGroup<FlxSprite>;
 
@@ -78,7 +78,7 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 					var box:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('FreeBox'));
 					boxgrp.add(box);
 
-					var char:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('fpstuff/' + songArray[fuck].toLowerCase() + '-encore'));
+					var char:FlxSprite = new FlxSprite(fuck * 780, 0).loadGraphic(Paths.image('fpstuff/' + songArray[fuck].toLowerCase()));
 					boxgrp.add(char);
 
 					var daStatic:FlxSprite = new FlxSprite();		
@@ -160,7 +160,7 @@ class EncoreState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!!!
 
 			
 				
-					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase() + '-encore', songArray[curSelected].toLowerCase() + '-encore');
+					PlayState.SONG = Song.loadFromJson(songArray[curSelected].toLowerCase(), songArray[curSelected].toLowerCase());
 			
 
 
