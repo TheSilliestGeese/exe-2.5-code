@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": true,
 			"offsets": [
 				-190,
 				-290
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "idle",
-			"loop": true,
-			"name": "Pyscho_Sonic_IDLE"
+			"fps": 24,
+			"name": "Pyscho_Sonic_IDLE",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				-96,
-				-225
+				-116,
+				-235
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "Psycho_Sonic_LEFT"
-		},
-		{
-			"offsets": [
-				-158,
-				-151
-			],
-			"indices": [],
 			"fps": 24,
-			"anim": "singUP",
-			"loop": false,
-			"name": "Pyscho_Sonic_UP"
+			"name": "Psycho_Sonic_LEFT",
+			"indices": []
 		},
 		{
+			"loop": false,
+			"offsets": [
+				-170,
+				-204
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pyscho_Sonic_UP",
+			"indices": []
+		},
+		{
+			"loop": false,
 			"offsets": [
 				-250,
-				-134
+				-150
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "Psycho_Sonic_RIGHT"
+			"fps": 24,
+			"name": "Psycho_Sonic_RIGHT",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-110,
-				-138
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singDOWN",
 			"loop": false,
-			"name": "Psycho_Sonic_DOWN"
+			"offsets": [
+				-127,
+				-162
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Psycho_Sonic_DOWN",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -62,12 +62,12 @@
 		-150,
 		-60
 	],
-    	"healthicon": "satanos",
+	"healthicon": "psysonic",
 	"flip_x": false,
 	"healthbar_colors": [
-		60,
-		88,
-		183
+		128,
+		139,
+		226
 	],
 	"camera_position": [
 		50,

@@ -4499,6 +4499,8 @@ class PlayState extends MusicBeatState
 				lastSection = Std.int(curStep / 16);
 			}
 
+
+			
 			updateCamFollow(elapsed);
 		}
 
@@ -5303,7 +5305,7 @@ class PlayState extends MusicBeatState
 						char.playAnim(value1, true);
 						char.specialAnim = true;
 					default:
-						char.specialAnim = false;
+						
 						char.playAnim(value1, true);
 						char.specialAnim = true;
 				}
