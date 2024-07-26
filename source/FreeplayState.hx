@@ -45,7 +45,7 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 
 	var bg:FlxSprite;
 	
-	var scrollingBg:FlxBackdrop;
+	var scrollingBg:FlxSprite;
 
 	var cdman:Bool = true;
 
@@ -75,7 +75,7 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 		bg.setGraphicSize(1280, 720);
 		add(bg);
 
-		scrollingBg = new FlxBackdrop(Paths.image('sidebar'), Y,0.0,0.0);
+		scrollingBg = new FlxSprite().loadGraphic(Paths.image('sidebar'));
 		add(scrollingBg);
 
 
