@@ -75,6 +75,8 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 		bg.setGraphicSize(1280, 720);
 		add(bg);
 
+		
+
 		scrollingBg = new FlxSprite().loadGraphic(Paths.image('sidebar'));
 		add(scrollingBg);
 
@@ -197,8 +199,8 @@ class FreeplayState extends MusicBeatState // REWRITE FREEPLAY!?!?!? HELL YEA!!!
 	override function update(elapsed:Float)
 	{
 
-		scrollingBg.y += 1;
-
+		//scrollingBg.y += 1;
+		//owee you dumbass you forgot to remove the /j pooks dw
 		super.update(elapsed);
 
 		var upP = FlxG.keys.justPressed.UP || FlxG.keys.justPressed.W;
