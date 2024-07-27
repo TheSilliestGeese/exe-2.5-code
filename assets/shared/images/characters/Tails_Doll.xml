@@ -1,80 +1,81 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="Tails_Doll.png">
-	<!-- Created with Adobe Animate version 21.0.3.38773 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="TailsDoll DOWN instance 10000" x="0" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10001" x="501" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10002" x="1002" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10003" x="1503" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10004" x="2004" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10005" x="2505" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10006" x="3006" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10007" x="3507" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10008" x="4008" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10009" x="4509" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10010" x="5010" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10011" x="5511" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10012" x="6012" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10013" x="6513" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll DOWN instance 10014" x="7014" y="0" width="501" height="500"/>
-	<SubTexture name="TailsDoll IDLE instance 10000" x="7515" y="0" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10001" x="0" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10002" x="541" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10003" x="1082" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10004" x="1623" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10005" x="2164" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10006" x="2705" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10007" x="3246" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10008" x="3787" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10009" x="4328" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10010" x="4869" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10011" x="5410" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10012" x="5951" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10013" x="6492" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll IDLE instance 10014" x="7033" y="540" width="541" height="540"/>
-	<SubTexture name="TailsDoll LEFT instance 10000" x="7574" y="540" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10001" x="0" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10002" x="536" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10003" x="1072" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10004" x="1608" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10005" x="2144" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10006" x="2680" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10007" x="3216" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10008" x="3752" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10009" x="4288" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10010" x="4824" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10011" x="5360" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10012" x="5896" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10013" x="6432" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll LEFT instance 10014" x="6968" y="1080" width="536" height="537"/>
-	<SubTexture name="TailsDoll RIGHT instance 10000" x="7504" y="1080" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10001" x="0" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10002" x="534" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10003" x="1068" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10004" x="1602" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10005" x="2136" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10006" x="2670" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10007" x="3204" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10008" x="3738" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10009" x="4272" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10010" x="4806" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10011" x="5340" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10012" x="5874" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10013" x="6408" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll RIGHT instance 10014" x="6942" y="1617" width="534" height="534"/>
-	<SubTexture name="TailsDoll UP instance 10000" x="7476" y="1617" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10001" x="0" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10002" x="539" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10003" x="1078" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10004" x="1617" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10005" x="2156" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10006" x="2695" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10007" x="3234" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10008" x="3773" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10009" x="4312" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10010" x="4851" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10011" x="5390" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10012" x="5929" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10013" x="6468" y="2155" width="539" height="538"/>
-	<SubTexture name="TailsDoll UP instance 10014" x="7007" y="2155" width="539" height="538"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Tails_Doll.png" width="3457" height="3339">
+	<SubTexture name="TailsDoll DOWN instance 10000" x="1" y="3008" width="367" height="329" frameX="-64" frameY="-74" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10001" x="371" y="3007" width="361" height="328" frameX="-66" frameY="-80" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10002" x="3104" y="1" width="352" height="318" frameX="-75" frameY="-98" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10003" x="3104" y="322" width="349" height="297" frameX="-87" frameY="-123" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10004" x="3002" y="2305" width="344" height="283" frameX="-94" frameY="-137" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10005" x="3099" y="935" width="347" height="293" frameX="-90" frameY="-128" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10006" x="3099" y="622" width="348" height="310" frameX="-83" frameY="-111" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10007" x="2909" y="3010" width="345" height="323" frameX="-75" frameY="-95" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10008" x="2550" y="3010" width="356" height="328" frameX="-70" frameY="-86" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10009" x="735" y="3003" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10010" x="1098" y="2998" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10011" x="1461" y="2986" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10012" x="1824" y="2983" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10013" x="2187" y="2953" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll DOWN instance 10014" x="2651" y="2679" width="360" height="328" frameX="-68" frameY="-83" frameWidth="501" frameHeight="500"/>
+	<SubTexture name="TailsDoll IDLE instance 10000" x="1010" y="2622" width="320" height="373" frameX="-101" frameY="-64" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10001" x="1333" y="2610" width="322" height="373" frameX="-100" frameY="-66" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10002" x="2419" y="797" width="326" height="375" frameX="-97" frameY="-70" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10003" x="2419" y="1175" width="332" height="375" frameX="-94" frameY="-76" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10004" x="330" y="2630" width="337" height="374" frameX="-91" frameY="-83" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10005" x="2306" y="2461" width="342" height="372" frameX="-88" frameY="-90" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10006" x="2748" y="797" width="348" height="371" frameX="-86" frameY="-96" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10007" x="2651" y="1931" width="351" height="371" frameX="-85" frameY="-98" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10008" x="2651" y="2305" width="348" height="371" frameX="-86" frameY="-96" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10009" x="2759" y="1" width="342" height="372" frameX="-88" frameY="-90" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10010" x="670" y="2626" width="337" height="374" frameX="-91" frameY="-83" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10011" x="2419" y="1553" width="332" height="375" frameX="-94" frameY="-76" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10012" x="1" y="2630" width="326" height="375" frameX="-97" frameY="-70" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10013" x="1658" y="2607" width="322" height="373" frameX="-100" frameY="-66" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll IDLE instance 10014" x="1983" y="2577" width="320" height="373" frameX="-101" frameY="-64" frameWidth="541" frameHeight="540"/>
+	<SubTexture name="TailsDoll LEFT instance 10000" x="1451" y="864" width="308" height="419" frameX="-86" frameY="-45" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10001" x="1792" y="1" width="311" height="417" frameX="-83" frameY="-46" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10002" x="1762" y="852" width="317" height="409" frameX="-75" frameY="-49" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10003" x="1070" y="2213" width="328" height="394" frameX="-59" frameY="-54" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10004" x="2419" y="410" width="336" height="384" frameX="-48" frameY="-57" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10005" x="2421" y="1" width="335" height="385" frameX="-49" frameY="-55" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10006" x="1401" y="2213" width="331" height="391" frameX="-53" frameY="-50" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10007" x="743" y="2221" width="324" height="398" frameX="-58" frameY="-45" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10008" x="2082" y="852" width="316" height="403" frameX="-64" frameY="-42" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10009" x="2106" y="1" width="312" height="406" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10010" x="1636" y="1774" width="312" height="407" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10011" x="316" y="1813" width="312" height="408" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10012" x="631" y="1810" width="312" height="408" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10013" x="946" y="1802" width="312" height="408" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll LEFT instance 10014" x="1" y="1813" width="312" height="409" frameX="-67" frameY="-40" frameWidth="536" frameHeight="537"/>
+	<SubTexture name="TailsDoll RIGHT instance 10000" x="2113" y="2074" width="372" height="384" frameX="-29" frameY="-45" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10001" x="1735" y="2184" width="375" height="390" frameX="-40" frameY="-47" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10002" x="374" y="2224" width="366" height="399" frameX="-67" frameY="-54" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10003" x="1756" y="439" width="346" height="410" frameX="-96" frameY="-57" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10004" x="1112" y="913" width="336" height="433" frameX="-110" frameY="-39" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10005" x="1410" y="439" width="343" height="422" frameX="-107" frameY="-48" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10006" x="1685" y="1286" width="358" height="417" frameX="-98" frameY="-50" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10007" x="929" y="1362" width="375" height="437" frameX="-87" frameY="-26" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10008" x="1" y="1368" width="380" height="442" frameX="-73" frameY="-15" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10009" x="1410" y="1" width="379" height="435" frameX="-56" frameY="-15" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10010" x="1307" y="1349" width="375" height="422" frameX="-40" frameY="-22" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10011" x="1261" y="1802" width="372" height="408" frameX="-30" frameY="-31" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10012" x="2046" y="1264" width="370" height="402" frameX="-26" frameY="-35" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10013" x="2046" y="1669" width="370" height="402" frameX="-26" frameY="-35" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll RIGHT instance 10014" x="1" y="2225" width="370" height="402" frameX="-26" frameY="-35" frameWidth="534" frameHeight="534"/>
+	<SubTexture name="TailsDoll UP instance 10000" x="1117" y="1" width="290" height="443" frameX="-118" frameY="-95" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10001" x="279" y="913" width="285" height="451" frameX="-120" frameY="-78" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10002" x="1" y="1" width="273" height="454" frameX="-126" frameY="-49" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10003" x="567" y="913" width="269" height="446" frameX="-124" frameY="-28" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10004" x="657" y="1362" width="269" height="439" frameX="-121" frameY="-20" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10005" x="384" y="1367" width="270" height="440" frameX="-121" frameY="-22" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10006" x="839" y="913" width="270" height="446" frameX="-123" frameY="-25" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10007" x="1" y="458" width="270" height="449" frameX="-125" frameY="-31" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10008" x="1" y="913" width="275" height="452" frameX="-122" frameY="-36" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10009" x="277" y="1" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10010" x="277" y="457" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10011" x="557" y="1" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10012" x="557" y="457" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10013" x="837" y="1" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
+	<SubTexture name="TailsDoll UP instance 10014" x="837" y="457" width="277" height="453" frameX="-121" frameY="-38" frameWidth="539" frameHeight="538"/>
 </TextureAtlas>
