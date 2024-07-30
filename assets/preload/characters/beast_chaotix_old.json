@@ -1,77 +1,77 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-103,
 				-15
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "transformation",
-			"indices": [],
-			"name": "chaotix beast transformation"
+			"fps": 24,
+			"name": "chaotix beast transformation",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-61,
 				-15
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "beast chaotix idle",
-			"indices": []
+			"indices": [],
+			"name": "beast chaotix idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-43,
 				-15
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "beast chaotix up",
-			"indices": []
+			"indices": [],
+			"name": "beast chaotix up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-43,
 				-15
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "beast chaotix right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "beast chaotix right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-55,
 				-15
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "beast chaotix left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "beast chaotix left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-55,
 				-16
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "beast chaotix down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "beast chaotix down"
 		}
 	],
 	"no_antialiasing": true,
 	"image": "characters/beast_chaotix_old",
 	"position": [
-		150,
-		360
+		60,
+		430
 	],
 	"healthicon": "chaotix-beast-pixel",
 	"flip_x": false,

@@ -1198,13 +1198,14 @@ class PlayState extends MusicBeatState
 				fucklesVectorBg.scale.y = 6;
 				fucklesVectorBg.antialiasing = false;
 
+				if (!(SONG.song.toLowerCase() == "our-horizon")){
 				add(fucklesAmyBg);
 				add(fucklesCharmyBg);
 				add(fucklesMightyBg);
 				add(fucklesEspioBg);
 				add(fucklesKnuxBg);
 				add(fucklesVectorBg);
-
+				}
 				whiteFuck = new FlxSprite(-600, 0).makeGraphic(FlxG.width * 6, FlxG.height * 6, FlxColor.BLACK);
 				whiteFuck.alpha = 0;
 				add(whiteFuck);
