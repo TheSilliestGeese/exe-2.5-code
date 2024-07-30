@@ -171,56 +171,6 @@
 				"lengthInSteps": 16,
 				"altAnim": false,
 				"typeOfSection": 0,
-				"sectionNotes": [
-					[
-						31153.8461538462,
-						-1,
-						"Play Animation",
-						"shoot1",
-						"GF"
-					],
-					[
-						30923.0769230769,
-						-1,
-						"Play Animation",
-						"dodge",
-						"BF"
-					],
-					[
-						31269.2307692308,
-						-1,
-						"Play Animation",
-						"GF",
-						"idle"
-					]
-				],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"gfSection": false,
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
-				"sectionNotes": [
-					[
-						31384.6153846154,
-						-1,
-						"Play Animation",
-						"BF",
-						"idle"
-					]
-				],
-				"bpm": 0,
-				"changeBPM": false,
-				"mustHitSection": false
-			},
-			{
-				"gfSection": false,
-				"lengthInSteps": 16,
-				"altAnim": false,
-				"typeOfSection": 0,
 				"sectionNotes": [],
 				"bpm": 0,
 				"changeBPM": false,
@@ -1283,6 +1233,6 @@
 		"arrowSkin": "",
 		"needsVoices": true,
 		"song": "Forestall-Desire",
-		"isRing": null
+		"isRing": false
 	}
 }
